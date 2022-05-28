@@ -4,8 +4,9 @@ import user_router from './routes/users'
 
 const APP_PORT=7070
 const app = express()
-app.use(cors())
 
+app.use(cors())
+app.use(express.json())
 app.use('/users', user_router)
 
 app.listen(APP_PORT, () => {

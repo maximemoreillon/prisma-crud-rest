@@ -4,15 +4,38 @@ import { Request, Response, NextFunction } from 'express'
 const read_users = async (req: Request, res: Response, next: NextFunction) => {
 
     try {
-        const users = await prisma.user.findMany()
+        const options = {
+            include: {
+                posts: true,
+                profile: true,
+            },
+        }
+        const users = await prisma.user.findMany(options)
         res.send(users)
-    } catch (error) {
+    } 
+    catch (error) {
         next(error)
     }
     
 }
 
+const create_user = async (req: Request, res: Response, next: NextFunction) => {
+
+    try {
+        const data = req.body
+        const result = await prisma.user.create({ data })
+
+        res.send(result)
+    }
+    catch (error) {
+        next(error)
+    }
+
+}
+
 export {
-    read_users
+    read_users,
+    create_user,
+
 }
 
