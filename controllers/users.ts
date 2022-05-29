@@ -23,9 +23,9 @@ const create_user = async (req: Request, res: Response, next: NextFunction) => {
 
     try {
         const data = req.body
-        const result = await prisma.user.create({ data })
+        const user = await prisma.user.create({ data })
 
-        res.send(result)
+        res.send(user)
     }
     catch (error) {
         next(error)
