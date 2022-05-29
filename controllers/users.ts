@@ -5,10 +5,7 @@ const read_users = async (req: Request, res: Response, next: NextFunction) => {
 
     try {
         const options = {
-            include: {
-                posts: true,
-                profile: true,
-            },
+            include: { posts: true },
         }
         const users = await prisma.user.findMany(options)
         res.send(users)

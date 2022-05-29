@@ -41,10 +41,26 @@ const update_post = async (req: Request, res: Response, next: NextFunction) => {
     
 }
 
+const delete_post = async (req: Request, res: Response, next: NextFunction) => {
+
+    try {
+        const { post_id } = req.params
+
+        const where = { id: Number(post_id) }
+
+        const post = await prisma.post.delete({ where })
+        res.send(post)
+    }
+    catch (error) {
+        next(error)
+    }
+
+}
 
 
 export {
     create_post,
     update_post,
+    delete_post,
 }
 
