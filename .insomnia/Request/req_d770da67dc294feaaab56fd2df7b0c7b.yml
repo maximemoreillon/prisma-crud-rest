@@ -1,0 +1,30 @@
+_id: req_d770da67dc294feaaab56fd2df7b0c7b
+type: Request
+parentId: fld_6d78fc6d5eee4b1ba1a2818d030dbd66
+modified: 1653913124678
+created: 1653913096906
+url: http://{{ _.host }}:{{ _.port }}/users/2/posts
+name: users/:user_id/posts
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"title": "An example post",
+    	"content": "This is a great post"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_5d797400cece4193800732e0fca67cfc
+authentication: {}
+metaSortKey: -1653911388189
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

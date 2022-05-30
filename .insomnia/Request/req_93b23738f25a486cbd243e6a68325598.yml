@@ -1,0 +1,21 @@
+_id: req_93b23738f25a486cbd243e6a68325598
+type: Request
+parentId: fld_6d78fc6d5eee4b1ba1a2818d030dbd66
+modified: 1653913137235
+created: 1653913096920
+url: http://{{ _.host }}:{{ _.port }}/users/1/posts/2
+name: users/:user_id/posts/:post_id
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1653910557255.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

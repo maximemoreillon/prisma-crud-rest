@@ -1,0 +1,21 @@
+_id: req_9918e8e6db00414ab49a4d400e80ddb5
+type: Request
+parentId: fld_6d78fc6d5eee4b1ba1a2818d030dbd66
+modified: 1653913131324
+created: 1653913096911
+url: http://{{ _.host }}:{{ _.port }}/users/1/posts
+name: users/:user_id/posts
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1653910913370
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

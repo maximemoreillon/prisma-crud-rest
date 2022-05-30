@@ -1,0 +1,29 @@
+_id: req_dcf20d05687a48e39c14bfb540f9d981
+type: Request
+parentId: fld_6d78fc6d5eee4b1ba1a2818d030dbd66
+modified: 1653913128464
+created: 1653913096925
+url: http://{{ _.host }}:{{ _.port }}/users/2/posts/3
+name: users/:user_id/posts/:post_id
+description: ""
+method: PATCH
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"content": "This is a great post"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_5d797400cece4193800732e0fca67cfc
+authentication: {}
+metaSortKey: -1653911150779.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

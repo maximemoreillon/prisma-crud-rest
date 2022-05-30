@@ -1,0 +1,30 @@
+_id: req_e8695648215e406686ca66b539f0fcfa
+type: Request
+parentId: fld_82746932da3d4ce7952b0104d08cafa2
+modified: 1653913144073
+created: 1653913096892
+url: http://{{ _.host }}:{{ _.port }}/users/2
+name: users/:user_id
+description: ""
+method: PATCH
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Roger",
+    	"email": "roger@example.com"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_5d797400cece4193800732e0fca67cfc
+authentication: {}
+metaSortKey: -1653910438526
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
