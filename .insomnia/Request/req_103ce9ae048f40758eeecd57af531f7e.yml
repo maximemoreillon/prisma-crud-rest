@@ -1,9 +1,9 @@
 _id: req_103ce9ae048f40758eeecd57af531f7e
 type: Request
 parentId: wrk_830aee897ffb4c3d8d2e3df49712fecc
-modified: 1653912741472
+modified: 1653913023233
 created: 1653912716178
-url: http://192.168.1.2:7070/users
+url: http://{{ _.host }}:{{ _.port }}/users
 name: users
 description: ""
 method: GET
